@@ -9,7 +9,7 @@ class Angle():
         self.a = a
 
     def __add__(self, other):
-        if (self.a + other.a) == 180:
+        if (self.a + other.a) >= 180:
             return Angle(0)
         return Angle(self.a + other.a)
 
